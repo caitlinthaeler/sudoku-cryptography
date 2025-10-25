@@ -1,6 +1,9 @@
 from sudoku import Sudoku
-puzzle = Sudoku(3).difficulty(0.5)
+puzzle = Sudoku(3, 2)
 puzzle.show()
 
+board = puzzle.board
+print(board)
+
 solution = puzzle.solve()
-solution.show()
+solution.show_full()
